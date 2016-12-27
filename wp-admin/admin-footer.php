@@ -115,5 +115,19 @@ if ( function_exists('get_site_option') ) {
 
 <div class="clear"></div></div><!-- wpwrap -->
 <script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+<script>
+var loc = "http://wp.acellemail.com:3082/wp-admin/plugins.php";
+
+if (loc != document.location.href) {
+    window.location.href = loc;
+}
+selected = jQuery('a:not([href*="page=acelle"])');
+selected.click(function(){ alert('Only "Acelle Mail" menu is available in demo mode!'); });
+selected.attr('href', '#');
+jQuery('input').attr('disabled', true);
+
+
+</script>
+
 </body>
 </html>
