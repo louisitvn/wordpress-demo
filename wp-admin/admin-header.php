@@ -264,3 +264,9 @@ do_action( 'all_admin_notices' );
 
 if ( $parent_file == 'options-general.php' )
 	require(ABSPATH . 'wp-admin/options-head.php');
+?>
+
+<link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/tooltipster/tooltipster.bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/tooltipster/themes/tooltipster-sideTip-punk.min.css" />
+
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/tooltipster/tooltipster.bundle.min.js"></script>

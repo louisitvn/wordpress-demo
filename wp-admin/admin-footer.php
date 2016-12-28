@@ -126,6 +126,15 @@ selected.click(function(){ alert('Only "Acelle Mail" menu is available in demo m
 selected.attr('href', '#');
 jQuery('input').attr('disabled', true);
 
+setInterval(function() {
+  jQuery('a.wp-has-submenu[href*="page=acelle"]').animate({opacity:0},200,"linear",function(){
+    jQuery(this).animate({opacity:1},200);
+  });
+}, 900);
+
+jQuery('#toplevel_page_acelle').attr('title', "Click the 'Acelle Mail' menu to access your Email Campaign management page");
+jQuery('#toplevel_page_acelle').tooltipster({ theme: 'tooltipster-punk', side: 'right' });
+jQuery('#toplevel_page_acelle').tooltipster('open');
 
 </script>
 
